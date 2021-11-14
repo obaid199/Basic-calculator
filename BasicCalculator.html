@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>calculator</title>
+
+  <style>
+    .main {
+      margin: auto;
+      border-style: solid;
+      width: 20%;
+      padding: 40px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="main">
+    <center><h2 style="color: red">BASIC CALCULATOR</h2></center>
+    Enter the First number :<input type="number" id="demo1"><br><br>
+    Enter the second number :<input type="number" id="demo2"><br><br>
+    <button onclick="multiply()">multiply</button>
+    <button onclick="divison()">divison</button>
+    <button onclick="add()">add</button>
+    <button onclick="substract()">subtract</button>
+    <p>Result</p>
+    <span id="demo"></span>
+  </div>
+  <script>
+
+
+    function multiply() {
+      var x = document.getElementById('demo1').value;
+      var y = document.getElementById('demo2').value;
+      document.getElementById('demo').innerHTML = x * y;
+
+    }
+    function divison() {
+      var x = document.getElementById('demo1').value;
+      var y = document.getElementById('demo2').value;
+      document.getElementById('demo').innerHTML = x / y;
+    }
+    function add() {
+      var x = Number(document.getElementById('demo1').value);
+      var y = Number(document.getElementById('demo2').value);
+      var z = x + y;
+      document.getElementById('demo').innerHTML = z;
+
+    }
+    function substract() {
+      var x = document.getElementById('demo1').value;
+      var y = document.getElementById('demo2').value;
+      document.getElementById('demo').innerHTML = x - y;
+
+    }
+
+
+  </script>
+
+</body>
+
+</html>
