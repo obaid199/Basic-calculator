@@ -1,2 +1,2 @@
 # Basic-calculator
-it is basic calculator designed only for the learning purpose
+it is a basic calculator designed only for the learning purpose
